@@ -14,6 +14,7 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
+        public static final int buttonDelete=0x7f050003;
         public static final int contentlist=0x7f050001;
         public static final int newProduct=0x7f050000;
         public static final int text=0x7f050002;
@@ -23,7 +24,8 @@ public final class R {
         public static final int row=0x7f030001;
     }
     public static final class string {
-        public static final int app_name=0x7f040001;
+        public static final int app_name=0x7f040002;
+        public static final int delete_button=0x7f040001;
         public static final int new_product=0x7f040000;
     }
 }

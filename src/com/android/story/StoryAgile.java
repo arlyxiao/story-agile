@@ -6,10 +6,10 @@ import android.content.DialogInterface;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+
 
 
 public class StoryAgile extends Activity {
@@ -21,8 +21,7 @@ public class StoryAgile extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        
-        Button newProductBtn= (Button)this.findViewById(R.id.newProduct);
+
         listData();
         
     }
@@ -59,6 +58,29 @@ public class StoryAgile extends Activity {
     	alert.show();
 
     }
+    
+    public void delProduct(View v) {
+    	AlertDialog.Builder alert = new AlertDialog.Builder(this);
+
+    	alert.setTitle("是否删除");
+
+    	alert.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+    		public void onClick(DialogInterface dialog, int whichButton) {
+ 
+    		    listData();
+    		}
+    	});
+
+    	alert.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+    		public void onClick(DialogInterface dialog, int whichButton) {
+    			
+    		}
+    	});
+
+    	alert.show();
+    }
+    
+    
     
     public void listData() {
     	/*

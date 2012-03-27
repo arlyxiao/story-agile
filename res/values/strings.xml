@@ -2,6 +2,7 @@
 <resources>
 
     <string name="new_product">+新建产品</string>
-    <string name="app_name">edu_mobile</string>
+    <string name="delete_button">X</string>
+    <string name="app_name">story-agile</string>
 
 </resources>
