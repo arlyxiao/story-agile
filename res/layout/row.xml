@@ -10,7 +10,7 @@
 			android:padding="10dip" />
         
         <Button
-	        android:id="@+id/buttonDelete"
+	        android:id="@+id/btnDelete"
 	        android:onClick="delProduct"
 	        android:layout_width="1dip"
 	        android:layout_height="wrap_content"
